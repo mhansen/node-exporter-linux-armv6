@@ -19,5 +19,5 @@ docker load < <tar_file>.tar
 ```
 5. Run the container
 ```
-docker run -d --name node-exporter -p 9100:9100 <image_name>
+docker run -d --name node-exporter --restart always -p 9100:9100 <image_name>
 ```
